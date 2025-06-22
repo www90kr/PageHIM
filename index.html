@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://bstage.in/?hl=en -->
+<html lang="en" class="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>AI HIM</title>
+    <meta name="description" content="비스테이지(b.stage)는 오너와 글로벌 팬덤의 성장을 지원하는 ‘팬덤 비즈니스 토탈 솔루션’입니다. 단독 플랫폼 구축 부터 맞춤형 비즈니스 솔루션까지 - 글로벌 팬덤 성장을 위한 모든 것, 비스테이지와 함께하세요.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="keywords" content="비스테이지, b.stage, bstage, 팬덤, fandom, 팬덤비즈니스, fandombusiness, 플랫폼, platform, saas, 팬덤플랫폼, fandomplatform, 플랫폼빌더, platformbuilder, 엔터테크, 팬덤테크">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="비스테이지(b.stage) | Home">
+    <meta property="og:title" content="팬덤 비즈니스 토탈 솔루션 비스테이지(b.stage)">
+    <meta property="og:description" content="비스테이지(b.stage)는 오너와 글로벌 팬덤의 성장을 지원하는 ‘팬덤 비즈니스 토탈 솔루션’입니다. 단독 플랫폼 구축 부터 맞춤형 비즈니스 솔루션까지 - 글로벌 팬덤 성장을 위한 모든 것, 비스테이지와 함께하세요.">
+    <meta property="og:image" content="https://bmf-web-cdn.static.astage.in/images/ko/01_og_home.png">
+    <meta property="og:url" content="https://bstage.in/?hl=ko">
+    <meta name="naver-site-verification" content="f4d0f6f939a8d7bb31394c9949f0654c5c8cd867">
+    <meta name="google-site-verification" content="zcSP7RQAqit6aTzy-9jUJhIvLYJWHTJXPLumd5O0rjw">
+    <link rel="icon" type="image/x-icon" href="https://bstage.in/favicon.ico">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <meta name="next-head-count" content="15">
+    <link rel="preload" href="./Your fandom, your way on b.stage_files/935bd659aed6c5c2.css" as="style">
+    <link rel="stylesheet" href="./Your fandom, your way on b.stage_files/935bd659aed6c5c2.css" data-n-g="">
+    <link rel="preload" href="./Your fandom, your way on b.stage_files/659f922e466845a3.css" as="style">
+    <link rel="stylesheet" href="./Your fandom, your way on b.stage_files/659f922e466845a3.css" data-n-p=""><noscript data-n-css=""></noscript>
+
+
+    <style>
+        .blog-features__item {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .blog-features__item .img {
+            width: 100%;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+        /* 버튼 스타일 */
+        
+        .blog-features___prev-next-main {
+            position: relative;
+            height: 0;
+            margin-top: 15vh;
+        }
+        
+        .swiper-button-prev-main,
+        .swiper-button-next-main {
+            position: absolute;
+            top: -60px;
+            /* 위로 띄움 */
+            z-index: 10;
+            width: 42px;
+            height: 42px;
+            background-color: #3cb371;
+            /* 검정 배경 */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-left: 5px;
+        }
+        
+        .swiper-button-prev-main {
+            left: 0;
+        }
+        
+        .swiper-button-next-main {
+            right: 0;
+        }
+        
+        .swiper-button-prev-main svg,
+        .swiper-button-next-main svg {
+            width: 12px;
+            height: 12px;
+            stroke: #ffffff;
+        }
+        
+        .blog-features-swiper {
+            width: 100%;
+            overflow: visible;
+            /* 겹침 방지 */
+        }
+        
+        .swiper-slide {
+            box-sizing: border-box;
+        }
+        
+        .swiper-slide {
+            width: auto;
+            /* 필수 아님, 상황에 따라 */
+            flex-shrink: 0;
+            /* 겹침 방지 */
+        }
+        
+        @media (max-width: 768px) {
+            .blog-features__item {
+                padding: 12px;
+            }
+            .blog-features__item .img {
+                height: 200px;
+            }
+            .blog-features___prev-next-main {
+                margin-top: 8vh;
+            }
+            .swiper-button-prev-main,
+            .swiper-button-next-main {
+                width: 36px;
+                height: 36px;
+                top: -50px;
+            }
+            .swiper-button-prev-main svg,
+            .swiper-button-next-main svg {
+                width: 10px;
+                height: 10px;
+            }
+        }
+        
+        .home-advantage__item {
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+            display: none;
+        }
+        
+        .home-advantage__item.fade-in {
+            display: block;
+            opacity: 1;
+        }
+        
+        .home-advantage__item.fade-out {
+            opacity: 0;
+        }
+        
+        .contact-btn {
+            margin: 0 45%;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            height: 95vh;
+            overflow: hidden;
+        }
+        
+        #bg-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: contain;
+        }
+        
+        @media (max-width: 768px) {
+            .video-wrapper {
+                height: 45vh;
+            }
+            #bg-video {
+                object-fit: contain;
+            }
+        }
+        
+        .com-header__menu_button {
+            display: none;
+        }
+        
+        #mobileMenu {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .com-header__menu_button {
+                display: block;
+                position: fixed;
+                top: 10px;
+                right: 20px;
+                z-index: 1001;
+            }
+            .com-header__menu_button button {
+                background: none;
+                border: none;
+                padding: 0;
+                width: 32px;
+                height: 32px;
+            }
+            .com-header__menu_button img {
+                width: 100%;
+                height: auto;
+            }
+            /* 오른쪽에서 슬라이드되는 메뉴 */
+            .com-header__menu-items {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 300px;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.8);
+                z-index: 1000;
+                box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+                transition: right 0.3s ease-in-out;
+                padding: 2rem 1.5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                padding-top: 120px;
+            }
+            .com-header__menu-items.active {
+                right: 0;
+            }
+            .com-header__menu-items__item p {
+                margin: 0;
+                font-size: 1.1rem;
+            }
+            .com-header__menu-items__item-sub {
+                margin-top: 0.5rem;
+                padding-left: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+        /* 모달 전체 배경 */
+        /* 모달 전체 배경 */
+        
+        .modal {
+            display: none;
+            /* 기본은 숨김 */
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            /* 반투명 검정 배경 */
+            backdrop-filter: blur(3px);
+            justify-content: center;
+            align-items: center;
+        }
+        /* 모달 열릴 때 */
+        
+        .modal.show {
+            display: flex;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* 모달 창 내부 */
+        
+        .modal-content {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 420px;
+            width: 90%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            position: relative;
+            animation: slideUp 0.3s ease;
+        }
+        
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        /* 닫기 버튼 */
+        
+        .modal-close {
+            position: absolute;
+            top: 12px;
+            right: 15px;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #888;
+        }
+        /* 폼 스타일 */
+        
+        .modal-content form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .modal-content h2 {
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+            color: #333;
+            text-align: center;
+        }
+        
+        .modal-content label {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #444;
+        }
+        
+        .modal-content input,
+        .modal-content select,
+        .modal-content textarea {
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            resize: none;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        
+        .modal-content input:focus,
+        .modal-content textarea:focus {
+            border-color: #3cb371;
+        }
+        /* 제출 버튼 */
+        
+        .btn-submit {
+            background: #3cb371;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .btn-submit:hover {
+            background: #3cb371;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contactBtn = document.querySelector('.home-bstage__btn a');
+            const modal = document.getElementById('contactModal');
+            const closeBtn = document.querySelector('.modal-close');
+
+            contactBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                modal.style.display = 'flex';
+            });
+
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+
+            // 바깥 클릭 시 닫기
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const openBtn = document.querySelector(".com-header__menu-util__create");
+            const openButton = document.querySelector(".contact-btn");
+            const modal = document.getElementById("contactModal");
+            const closeBtn = document.getElementById("closeModalBtn");
+            const form = document.getElementById("contactForm");
+
+            openBtn.addEventListener("click", () => {
+                modal.classList.add("show");
+                document.body.style.overflow = "hidden";
+            });
+            openButton.addEventListener("click", () => {
+                modal.classList.add("show");
+                document.body.style.overflow = "hidden";
+            });
+
+            closeBtn.addEventListener("click", closeModal);
+            modal.addEventListener("click", (e) => {
+                if (e.target === modal) closeModal();
+            });
+
+            function closeModal() {
+                modal.classList.remove("show");
+                document.body.style.overflow = "";
+            }
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                alert("문의가 성공적으로 접수되었습니다!");
+                form.reset();
+                closeModal();
+            });
+        });
+    </script>
+</head>
+
+<body style="overflow: unset;">
+    <header class="com-header en">
+        <div class="inner" style="opacity: 1; transform: none;">
+            <div class="com-header__logo"><a href="./index.html"><svg width="31" height="44" viewBox="0 0 31 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.5914 12.0555V0H0V30.1183H13.4086L13.4042 44H15.5C24.0468 44 31 36.8015 31 27.9532C31 19.9071 25.2563 13.129 17.5914 12.0555ZM13.4108 25.788H4.37493C5.01458 21.6271 8.32634 17.4639 13.4086 16.4378V25.788H13.4108ZM13.4108 12.0555C9.9069 12.555 6.04282 14.4557 3.86408 17.7216V3.87384H13.4086V12.0555H13.4108ZM17.5914 39.4707V16.4356C22.8811 17.4639 26.8194 22.3413 26.8194 27.9532C26.8194 33.565 22.8811 38.4424 17.5914 39.4707Z" fill="black"></path></svg></a></div>
+            <div class="com-header__menu">
+                <div class="com-header__menu-items">
+                    <div class="com-header__menu-items__item has-sub">
+                        <p><a href="./brand.html">AI HIM</a></p>
+                    </div>
+                    <div class="com-header__menu-items__item has-sub">
+                        <p><a href="javascript:void(0)">About</a></p>
+                        <div id="subAbout" class="com-header__menu-items__item-sub en"><a href="./ceo.html">CEO</a><a href="/vision.html">VISION</a></div>
+                    </div>
+                    <div class="com-header__menu-items__item has-sub">
+                        <p><a href="javascript:void(0)">Services</a></p>
+                        <div id="subServices" class="com-header__menu-items__item-sub en"><a href="./flow.html">Flow</a><a href="./portfolio.html">Projects</a></div>
+                    </div>
+                    <div class="com-header__menu-items__item has-sub">
+                        <p><a href="./portfolio.html">Portfolio</a></p>
+                    </div>
+                    <div class="com-header__menu-items__item has-sub">
+                        <p><a href="./notice.html">Notice & News</a></p>
+                    </div>
+                    <div class="com-header__menu-items__item has-sub">
+                        <p><a href="./help.html" target="_blank">Help</a></p>
+                    </div>
+                </div>
+                <div class="com-header__menu-util">
+                    <button class="com-header__menu-util__create btn-round size--small en">Get In Touch</button></div>
+            </div>
+            <div class="com-header__menu_button">
+                <button id="menuToggle" aria-label="Open menu">
+                    <img src="./menu-icon.svg" alt="Menu" />
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="com-header__menu-items" id="mobileMenu">
+        <p><a href="./brand.html">AI HIM</a></p>
+        <p><a href="./ceo.html">CEO</a></p>
+        <p><a href="/vision.html">VISION</a></p>
+        <p><a href="./flow.html">Flow</a></p>
+        <p><a href="./portfolio.html">Portfolio</a></p>
+        <p><a href="./notice.html">Notice & News</a></p>
+        <p><a href="./help.html" target="_blank">Help</a></p>
+    </div>
+    <div id="__next" data-reactroot="" style="height: 100vh;">
+        <div class="video-wrapper">
+            <video autoplay muted loop playsinline id="bg-video">
+    <source src="./video-main1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+        </div>
+        <div id="app">
+
+            <main>
+                <div style="opacity: 1; transform: none;">
+                    <div class="home">
+                        <div class="blog blog-bg">
+                            <section class="blog-features">
+                                <div class="inner">
+                                    <div class="blog-features__header">
+                                        <h2 class="typo-3">Services</h2>
+                                        <div class="blog-features___prev-next-main">
+
+                                            <div class="swiper-button-prev-main">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.5 2L8.5 6L3.5 10" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="swiper-button-next-main">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.5 10L3.5 6L8.5 2" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper blog-features-swiper">
+                                        <div class="swiper-wrapper">
+                                            <!-- Slide 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="blog-features__item">
+                                                    <div class="img" style="background-image: url('./arisu.png');"></div>
+                                                    <div class="info">
+                                                        <p class="category">ARISU</p>
+                                                        <h3 class="typo-7-m en">여행사 포탈사이트 프로젝트</h3>
+                                                        <p>기획부터 배포 운영까지 진행, 원스톱예약 솔루션</p>
+                                                        <p class="date">2025.06.01</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Slide 2 -->
+                                            <div class="swiper-slide">
+                                                <div class="blog-features__item">
+                                                    <div class="img" style="background-image: url('./miraen.png');"></div>
+                                                    <div class="info">
+                                                        <p class="category">미래엔 디지털교과서</p>
+                                                        <h3 class="typo-7-m en">미래엔 디지털교과서(영어)</h3>
+                                                        <p>초등영어교과서 UI UX 및 컨텐츠 화면 공동 개발</p>
+                                                        <p class="date">24.09.30</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Slide 3 -->
+                                            <div class="swiper-slide">
+                                                <div class="blog-features__item">
+                                                    <div class="img" style="background-image: url('./kpop.png');"></div>
+                                                    <div class="info">
+                                                        <p class="category">K-PoP English</p>
+                                                        <h3 class="typo-7-m en">KPoP 교육 포탈사이트 프로젝트</h3>
+                                                        <p>기획부터 배포 운영까지 진행, 원스톱예약 솔루션</p>
+                                                        <p class="date">2024.06.01</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="blog-features__item">
+                                                    <div class="img" style="background-image: url('./coachmi-room.png');"></div>
+                                                    <div class="info">
+                                                        <p class="category">Coach Mi</p>
+                                                        <h3 class="typo-7-m en">코치미 교육강의 플랫폼사이트</h3>
+                                                        <p>기획부터 배포 운영까지 진행</p>
+                                                        <p class="date">25.06.01</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide">
+                                                <div class="blog-features__item">
+                                                    <div class="img" style="background-image: url('./images/ws_mainf.png');"></div>
+                                                    <div class="info">
+                                                        <p class="category">우성소프트</p>
+                                                        <h3 class="typo-7-m en">우성소프트(WMS)</h3>
+                                                        <p> 창고관리 시스템, 기획부터 배포 운영까지 진행</p>
+                                                        <p class="date">25.09.30</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="section-divider3"></section>
+                            <div class="blog-objects">
+                                <div class="com-obj-4 color--green reverse" style="opacity:0;transform:translateY(160px) translateZ(0)"></div>
+                            </div>
+                        </div>
+                        <section class="home-bstage">
+                            <div class="inner">
+                                <p class="typo-1 en" style="opacity: 1;">AI HIM </p>
+                                <p class="typo-6-m en" style="opacity: 1;">당신의 아이디어를 현실로, 완벽한 SI 웹개발 파트너</p>
+                                <p class="typo-3 en" style="opacity: 1;">customize web solution</p>
+                                <p class="typo-6-m en" style="opacity: 1;">웹 애플리케이션 개발부터 시스템 통합까지,<br/> 당신의 비즈니스에 최적화된 솔루션을 제공합니다.</p>
+                                <div class="home-bstage__btn" style="opacity: 1;"><a href="javascript:void(0)" class="contact-btn btn-round size--small en">Contact us</a></div>
+
+                            </div>
+                            <div class="inner">
+                                <div class="com-marquee hover--pause  ">
+                                    <div class="com-marquee__content">
+                                        <div class="com-owner__slide">
+                                            <div class="com-owner__slide-item type--square color--black">
+                                                <figure><img src="./images/arisu_s01.PNG" alt=""></figure>
+                                                <div class="com-owner__slide-item__hover" style="background-color:#fff"><a href="./portfolio.html"><span class="text-1 en">Tour &amp; Travel </span><p class="typo-5-m en">ARISU TOUR DMC</p></a></div>
+                                            </div>
+                                            <div class="com-owner__slide-item type--square color--black">
+                                                <figure><img src="./images/weep_s000.PNG" alt=""></figure>
+                                                <div class="com-owner__slide-item__hover" style="background-color:#fff"><a href="./portfolio.html"><span class="text-1 en">Job &amp; Project</span><p class="typo-5-m en">Wee.p</p></a></div>
+                                            </div>
+                                            <div class="com-owner__slide-item type--square color--black">
+                                                <figure><img src="./images/coachmi_s01.PNG" alt=""></figure>
+                                                <div class="com-owner__slide-item__hover" style="background-color:#fff"><a href="./portfolio.html"><span class="text-1 en">Education &amp; Class</span><p class="typo-5-m en">CoachMi</p></a></div>
+                                            </div>
+                                            <div class="com-owner__slide-item type--square color--black">
+                                                <figure><img src="./images/kpop_s01.png" alt=""></figure>
+                                                <div class="com-owner__slide-item__hover" style="background-color:#fff"><a href="./portfolio.html"><span class="text-1 en">Education</span><p class="typo-5-m en">K-pop English</p></a></div>
+                                            </div>
+                                            <div class="com-owner__slide-item type--square color--black">
+                                                <figure><img src="./images/miraen_s.png" alt=""></figure>
+                                                <div class="com-owner__slide-item__hover" style="background-color:#fff"><a href="./portfolio.html"><span class="text-1 en">Education</span><p class="typo-5-m en">MireaN</p></a></div>
+                                            </div>
+                                            <div class="com-owner__slide-item type--square color--black">
+                                                <figure><img src="./images/ws_s000.png" alt=""></figure>
+                                                <div class="com-owner__slide-item__hover" style="background-color:#fff"><a href="./portfolio.html"><span class="text-1 en">WMS &amp; Soft</span><p class="typo-5-m en">Woosung</p></a></div>
+                                            </div>
+                                            <div class="com-owner__slide-item type--square color--black">
+                                                <figure><img src="./images/somemate_s02.PNG" alt=""></figure>
+                                                <div class="com-owner__slide-item__hover" style="background-color:#fff"><a href="./portfolio.html"><span class="text-1 en">Dating &amp; Matching</span><p class="typo-5-m en">SomeMate</p></a></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="home-advantage">
+                            <div class="inner">
+                                <div class="home-advantage__item bg--orange">
+                                    <div class="home-advantage__item-inner">
+                                        <div class="home-advantage__item-text">
+                                            <p class="typo-2 en">All in One</p>
+
+                                        </div>
+                                        <div style="padding:30px;">
+                                            <p class="typo-6-m en">기획부터 배포 - 운영까지 <br class="mo"> 올인원 진행 <br class="pc">기획, 디자인, 프론트·백엔드, 배포, 유지보수까지 <br class="mo"><br class="pc">한 팀에서 전 과정을 책임집니다.<br> From planning and design
+                                                <br class="mo"> to front-end & back-end development, <br class="pc"><br class="mo"> deployment , and maintenance -
+                                                <br class="mo">our team handles the entire process from start to finish.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="home-advantage__item bg--mint">
+                                    <div class="home-advantage__item-inner">
+                                        <div class="home-advantage__item-text">
+                                            <p class="typo-2 en">We Listen,<br/> Then Build</p>
+
+                                        </div>
+                                        <div style="padding:30px;">
+                                            <p class="typo-6-m en">먼저 귀 기울이고, 완벽하게 만듭니다. <br>진정 필요한 가치를 정확히 파악하는 것이<br class="mo"> 우리의 시작입니다. <br />단순한 개발을 넘어, <br class="mo">비즈니스 목표와 사용자 니즈를 <br/>깊이 이해하며 함께합니다.
+                                                <br class="mo">We listen first, then deliver flawlessly.<br class="pc">Understanding the true value is where we begin.<br class="mo"><br class="pc">More than just development,<br class="pc"><br class="mo">                                                your business goals and user<br class="mo"> needs to move forward together.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="home-advantage__item bg--purple">
+                                    <div class="home-advantage__item-inner">
+                                        <div class="home-advantage__item-text">
+                                            <p class="typo-2 en">Know-how<br/>Expertise
+                                            </p>
+                                        </div>
+                                        <div style="padding:30px;">
+                                            <p class="typo-6-m en">전문성과 경험, 신뢰를 바탕으로 <br class="mo">프로젝트를 성공으로 이끕니다.<br>체계적인 진행으로 완성도를 높이고, <br class="mo">믿음직한 품질을 제공합니다. <br>We lead projects to success <br>with expertise, experience, and trust.<br>Our structured approach ensures
+                                                <br class="mo"> high quality and reliable results.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="home-together com-dynamic-pagination color--black">
+                            <div class="inner">
+                                <p class="typo-1 en" style="opacity: 1;">Partner</p>
+                                <div style="opacity: 1; transform: none;">
+                                    <div class="home-together__slide " style="padding-bottom:100px">
+                                        <div>
+                                            <div style="width: 85%; display: grid;  grid-template-columns: repeat(4, 1fr); gap: 25px;  margin: 0 auto;">
+                                                <div class="main-partner-item"><span><div class="partner-wrapper "><img src="./bnsystem.JPG" alt=""></div></span></div>
+                                                <div class="main-partner-item"><span><div class="partner-wrapper "><img src="./windly02.png" alt=""></div></span></div>
+                                                <div class="main-partner-item"><span><div class="partner-wrapper "><img src="./innopay01.PNG" alt=""></div></span></div>
+                                                <div class="main-partner-item"><span><div class="partner-wrapper "><img src="./arisu_logo01.PNG" alt="" style="width: 80px;"></div></span></div>
+                                                <div class="main-partner-item"><span><div class="partner-wrapper "><img src="./Your fandom, your way on b.stage_files/8fab9e82-3b9d-4a23-a08b-a6fb717287d9" alt=""></div></span></div>
+                                                <div class="main-partner-item"><span><div class="partner-wrapper "><img src="./Your fandom, your way on b.stage_files/e46f3a4f-6194-43e7-ba91-4acf0c6659ea" alt=""></div></span></div>
+                                                <div class="main-partner-item"><span><div class="partner-wrapper "><img src="./aligo03.png" alt=""></div></span></div>
+                                                <div class="main-partner-item"><span><div class="partner-wrapper "><img src="./cafe24_logo.png" alt=""></div></span></div>
+                                                <div class="main-partner-item"><span><div class="partner-wrapper "><img src="./coachmi_logo.PNG" alt="" style="width: 60px;"></div></span></div>
+                                                <div class="main-partner-item"><span><div class="partner-wrapper "><img src="./kpop_logo.png" alt="" style="width: 80px;"></div></span></div>
+                                                <div class="main-partner-item"><span><div class="partner-wrapper "><img src="./Your fandom, your way on b.stage_files/3cb8d1d0-7124-4f90-91c7-9eb5b9643126" alt=""></div></span></div>
+                                                <div class="main-partner-item"><span><div class="partner-wrapper "><img src="./Your fandom, your way on b.stage_files/8fab9e82-3b9d-4a23-a08b-a6fb717287d9" alt=""></div></span></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </main>
+            <footer class="com-footer en">
+                <div class="inner">
+                    <div class="com-footer__logo"><svg width="45" height="60" viewBox="0 0 93 128" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M52.7713 35.0724V0H0V87.6157H40.2287L40.2108 128H46.4978C72.139 128 93 107.058 93 81.3179C93 57.9093 75.7713 38.192 52.7713 35.0679V35.0724ZM40.2242 75.0246H13.1211C15.0359 62.9196 24.9731 50.8057 40.2242 47.8256V75.0246ZM40.2242 35.0724C29.713 36.5264 18.1211 42.0589 11.5785 51.5574V11.2721H40.2242V35.0724ZM52.7713 114.828V47.8166C68.6368 50.8102 80.4574 64.9994 80.4574 81.3179C80.4574 97.6364 68.6413 111.83 52.7713 114.824V114.828Z" fill="white"></path></svg></div>
+                    <div class="com-footer__menu">
+                        <div class="com-footer__menu-item theme--type2 en"><a href="./notice_detail3.html" target="_blank">개인정보처리방침</a><a href="./notice_detail2.html">이용약관</a><a href="https://bstage.in/privacy-policy?hl=en">쿠키 정책 / 이메일 무단 수집거부</a>
+                            <a href="./qna.html">자주찾는질문</a><a href="./help.html">고객센터 </a></div>
+
+                    </div>
+
+
+                </div>
+            </footer>
+
+            <div id="contactModal" class="modal">
+                <div class="modal-content">
+                    <button class="modal-close" id="closeModalBtn">&times;</button>
+                    <h2>문의하기</h2>
+                    <form action="https://formspree.io/f/xkgbqnjg" method="POST">
+                        <label for="name">이름(업체명)</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="tel">연락처</label>
+                        <input type="tel" id="tel" name="tel" required>
+                        <label for="budget">예산</label>
+                        <select id="budget" name="budget">
+                            <option value="1,000 만원 미만">1,000 만원 미만</option>
+                              <option value="1,000 만원 ~ 3,000 만원">1,000 만원 ~ 3,000 만원</option>
+                                <option value="3,000 만원 ~ 5,000 만원">3,000 만원 ~ 5,000 만원</option>
+                                  <option value="5,000 만원 ~ 7,000 만원">5,000 만원 ~ 7,000 만원</option>
+                                    <option value="7,000 만원 ~ 1억">7,000 만원 ~ 1억</option>
+                                     <option value="1 억원 ~ 3 억원">1 억원 ~ 3 억원</option>
+                                       <option value="3 억원 이상">3 억원 이상</option>
+                        </select>
+                        <label for="message">문의 내용</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const swiper = new Swiper('.blog-features-swiper', {
+                slidesPerView: 1.2,
+                spaceBetween: 28,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next-main',
+                    prevEl: '.swiper-button-prev-main',
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1.1,
+                        spaceBetween: 12,
+                    },
+                    480: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 16,
+                    },
+                    768: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 28,
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const items = document.querySelectorAll(".home-advantage__item");
+            let current = 0;
+
+            function showNextItem() {
+                const currentItem = items[current];
+                const nextIndex = (current + 1) % items.length;
+                const nextItem = items[nextIndex];
+
+                // 현재 항목 페이드 아웃
+                currentItem.classList.remove("fade-in");
+                currentItem.classList.add("fade-out");
+
+                // 일정 시간 후 다음 항목 페이드 인
+                setTimeout(() => {
+                    currentItem.classList.remove("fade-out");
+                    currentItem.style.display = "none";
+
+                    nextItem.style.display = "block";
+                    nextItem.classList.add("fade-in");
+
+                    current = nextIndex;
+                }, 800); // 페이드아웃 지속시간과 동일
+            }
+
+            // 초기 첫 항목 보이기
+            items[current].style.display = "block";
+            items[current].classList.add("fade-in");
+
+            // 3.5초마다 전환 (약간의 여유 시간 포함)
+            setInterval(showNextItem, 3500);
+        });
+    </script>
+
+    <script id="__NEXT_DATA__" type="application/json">
+        {
+            "props": {
+                "pageProps": {
+
+                    "partners": [{
+                        "PARTNER_IDX": 17,
+                        "NAME": "PayPal",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20230426/3ecf3381-67aa-40d6-af9d-b65d21848ed7",
+                        "MOBILE_THUMB_KEY": "/20230426/97c86054-309e-4917-86ce-11891bb1ca72"
+                    }, {
+                        "PARTNER_IDX": 19,
+                        "NAME": "EXIMBAY",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20230426/86a12333-b3f5-468e-8f25-97dd04c12412",
+                        "MOBILE_THUMB_KEY": "/20230426/8d5cdbe1-9805-4ec2-83c3-596e94d4a70a"
+                    }, {
+                        "PARTNER_IDX": 56,
+                        "NAME": "toss",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20240403/5538200b-02c0-41ff-a629-a51d9593af6c",
+                        "MOBILE_THUMB_KEY": "/20240403/e46f3a4f-6194-43e7-ba91-4acf0c6659ea"
+                    }, {
+                        "PARTNER_IDX": 55,
+                        "NAME": "stripe",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20240403/5f28ca99-7410-46ee-bfb1-4034c9986811",
+                        "MOBILE_THUMB_KEY": "/20240403/df6f50f6-ed7a-47af-8887-e75254729a93"
+                    }, {
+                        "PARTNER_IDX": 29,
+                        "NAME": "HANJIN",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20230802/4d248200-af8f-4aba-921f-f1db8eaa0f45",
+                        "MOBILE_THUMB_KEY": "/20230802/d774600a-eb8c-48b1-abc1-066a67d0ab68"
+                    }, {
+                        "PARTNER_IDX": 62,
+                        "NAME": "DHL GoGreen+",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20240913/c981d69f-ef7c-4bc8-83a9-4d7946214054",
+                        "MOBILE_THUMB_KEY": "/20240913/11e2d7fe-505e-44f5-894d-ac7bd2615539"
+                    }, {
+                        "PARTNER_IDX": 57,
+                        "NAME": "Dreamus",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20240403/a1bd2893-534a-42c6-a271-93f046625efd",
+                        "MOBILE_THUMB_KEY": "/20240403/62e2d79b-1487-43da-b095-c05f4c2ff5cb"
+                    }, {
+                        "PARTNER_IDX": 50,
+                        "NAME": "PRISMER",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20240403/4a2db093-3f61-4508-95d4-116fd88d5313",
+                        "MOBILE_THUMB_KEY": "/20240403/a2494809-5ae7-4601-b4de-38c9bcd14d4a"
+                    }, {
+                        "PARTNER_IDX": 51,
+                        "NAME": "JJ",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20240403/6dc2197e-12f9-4ea8-bf62-cf319839b0f8",
+                        "MOBILE_THUMB_KEY": "/20240403/98401863-e9cb-43c0-ba92-175c273b1840"
+                    }, {
+                        "PARTNER_IDX": 20,
+                        "NAME": "sendbird",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20230426/a256c193-8b7c-4d40-8b2a-cc4e25ec8a2c",
+                        "MOBILE_THUMB_KEY": "/20230426/bbf0a8c6-80bc-495b-99d1-974e858aae81"
+                    }, {
+                        "PARTNER_IDX": 21,
+                        "NAME": "CJ Olivenetworks",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20230426/4ce3ec83-27e3-4c0a-b1c1-9dd5d2c410f0",
+                        "MOBILE_THUMB_KEY": "/20230426/3cb8d1d0-7124-4f90-91c7-9eb5b9643126"
+                    }, {
+                        "PARTNER_IDX": 22,
+                        "NAME": "aws",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20230426/479795f7-ce3e-4fa3-83e7-97638fe50d8e",
+                        "MOBILE_THUMB_KEY": "/20230426/8fab9e82-3b9d-4a23-a08b-a6fb717287d9"
+                    }, {
+                        "PARTNER_IDX": 23,
+                        "NAME": "Atlas",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20230426/3278d085-4c6c-4aae-97ba-f8ba3ecd9983",
+                        "MOBILE_THUMB_KEY": "/20230426/807b269c-e782-4fb1-8c25-5366431e75d0"
+                    }, {
+                        "PARTNER_IDX": 24,
+                        "NAME": "CLOUDFLARE",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20230426/599046fe-b802-4dd2-96e4-88a9e7372282",
+                        "MOBILE_THUMB_KEY": "/20230426/178161c3-655a-4a2c-82ae-0fb555edd856"
+                    }, {
+                        "PARTNER_IDX": 25,
+                        "NAME": "BESPIN GLOBAL",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20230426/08fb97bd-9d20-4a45-83e0-045de9c8bba9",
+                        "MOBILE_THUMB_KEY": "/20230426/77ab5180-145c-44c5-8ce2-135bc31fe986"
+                    }, {
+                        "PARTNER_IDX": 26,
+                        "NAME": "QueryPie",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20230426/8b373272-d07f-4cfc-8e90-fa7452bb15df",
+                        "MOBILE_THUMB_KEY": "/20230426/5130ebbd-69b4-4cc0-8a21-4ae9e8d1fda2"
+                    }, {
+                        "PARTNER_IDX": 27,
+                        "NAME": "DATADOG",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20230426/a24f715b-53d5-4073-8917-56f8a420b391",
+                        "MOBILE_THUMB_KEY": "/20230426/abfa1244-96cb-4098-85b5-55b57a56ab1c"
+                    }, {
+                        "PARTNER_IDX": 28,
+                        "NAME": "INKA Networks",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20230426/72b972d4-2c86-4825-9fde-30bde3f93d17",
+                        "MOBILE_THUMB_KEY": "/20230426/55a702a4-a34c-498e-9809-affd4b1d3430"
+                    }, {
+                        "PARTNER_IDX": 58,
+                        "NAME": "Booming Studios",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20240403/e46d1261-911e-4fc9-b7b6-c4bc9f6b81fb",
+                        "MOBILE_THUMB_KEY": "/20240403/3cdfd9db-d168-4159-ab42-a0394fb63b8e"
+                    }, {
+                        "PARTNER_IDX": 59,
+                        "NAME": "SOUND 360",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20240403/8ef78eee-fecd-438d-8d9b-f3519a1489ef",
+                        "MOBILE_THUMB_KEY": "/20240403/497bf8da-613c-4d57-88be-85b8e5ed4835"
+                    }, {
+                        "PARTNER_IDX": 60,
+                        "NAME": "Maeil",
+                        "CLASS_NAME": "파트너",
+                        "PC_THUMB_KEY": "/20240403/239da773-4e26-4453-be89-3fff31e5236e",
+                        "MOBILE_THUMB_KEY": "/20240403/b0ad715e-c600-425f-8102-bda56563bb3a"
+                    }],
+
+                    "popup": null
+                },
+                "__N_SSP": true
+            },
+            "page": "/",
+            "query": {
+                "hl": "en"
+            },
+            "buildId": "5IkPvvPTe_8vQeYMPfAcK",
+            "isFallback": false,
+            "gssp": true,
+            "scriptLoader": []
+        }
+    </script>
+    <script defer="" src="./Your fandom, your way on b.stage_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;94a63c85ebf230fd&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.5.0&quot;,&quot;token&quot;:&quot;0bfd909a14b24e7eb6ba66d05fddbfa9&quot;}"
+        crossorigin="anonymous"></script>
+    <div class="ReactModalPortal"></div>
+    <next-route-announcer>
+        <p aria-live="assertive" id="__next-route-announcer__" role="alert" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;"></p>
+    </next-route-announcer><iframe id="_hjSafeContext_60399901" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="./Your fandom, your way on b.stage_files/saved_resource.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body>
+
+</html>

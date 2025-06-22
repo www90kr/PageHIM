@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html lang="en" class="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>AI HIM</title>
+    <meta name="description" content="Increase your brand value with an integrated solution. Promote and sell your brand&#39;s products globally. Run content spaces and fan communities to drive loyalty to your brand.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="keywords" content="b.stage, bstage, fandom, fandombusiness, platform, brands, d2c, brandvalue, brandloyalty, loyalty, ecommerce, data, survey, community">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="b.stage | Brands">
+    <meta property="og:title" content="b.stage | Brands">
+    <meta property="og:description" content="Increase your brand value with an integrated solution. Promote and sell your brand&#39;s products globally. Run content spaces and fan communities to drive loyalty to your brand.">
+    <meta property="og:image" content="https://bmf-web-cdn.static.astage.in/images/en/10_og_solution6.png">
+    <link rel="icon" type="image/x-icon" href="https://bstage.in/favicon.ico">
+    <meta name="next-head-count" content="14">
+    <link rel="preload" href="./b.stage _ Brands_files/935bd659aed6c5c2.css" as="style">
+    <link rel="stylesheet" href="./b.stage _ Brands_files/935bd659aed6c5c2.css" data-n-g="">
+    <link rel="preload" href="./b.stage _ Brands_files/659f922e466845a3.css" as="style">
+    <link rel="stylesheet" href="./b.stage _ Brands_files/659f922e466845a3.css" data-n-p=""><noscript data-n-css=""></noscript>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f5fdf7;
+            color: #2b4d36;
+        }
+        
+        .wrapper {
+            max-width: 800px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 80, 40, 0.1);
+            position: relative;
+        }
+        
+        .header {
+            border-bottom: 2px solid #2b4d36;
+            padding-bottom: 16px;
+            margin-bottom: 24px;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin: 0;
+            color: #2b4d36;
+        }
+        
+        .meta {
+            font-size: 0.9rem;
+            color: #7c9c84;
+            margin-top: 8px;
+        }
+        
+        .content {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            white-space: pre-wrap;
+        }
+        
+        .highlight-box {
+            background: #e9f6ed;
+            border-left: 5px solid #57a773;
+            padding: 16px;
+            margin: 32px 0;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #fff;
+            background-color: #57a773;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background-color: #3c7b56;
+        }
+        
+        .watermark {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 10px;
+            color: #c4d7c4;
+        }
+        
+        @media (max-width: 768px) {
+            .wrapper {
+                margin: 20px;
+                padding: 20px;
+            }
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            .back-link {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        /* 모달 전체 배경 */
+        
+        .modal {
+            display: none;
+            /* 기본은 숨김 */
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            /* 반투명 검정 배경 */
+            backdrop-filter: blur(3px);
+            justify-content: center;
+            align-items: center;
+        }
+        /* 모달 열릴 때 */
+        
+        .modal.show {
+            display: flex;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* 모달 창 내부 */
+        
+        .modal-content {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 420px;
+            width: 90%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            position: relative;
+            animation: slideUp 0.3s ease;
+        }
+        
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        /* 닫기 버튼 */
+        
+        .modal-close {
+            position: absolute;
+            top: 12px;
+            right: 15px;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #888;
+        }
+        /* 폼 스타일 */
+        
+        .modal-content form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .modal-content h2 {
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+            color: #333;
+            text-align: center;
+        }
+        
+        .modal-content label {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #444;
+        }
+        
+        .modal-content input,
+        .modal-content select,
+        .modal-content textarea {
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            resize: none;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        
+        .modal-content input:focus,
+        .modal-content textarea:focus {
+            border-color: #3cb371;
+        }
+        /* 제출 버튼 */
+        
+        .btn-submit {
+            background: #3cb371;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .btn-submit:hover {
+            background: #3cb371;
+        }
+        
+        .com-header__menu_button {
+            display: none;
+        }
+        
+        #mobileMenu {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .com-header__menu_button {
+                display: block;
+                position: fixed;
+                top: 10px;
+                right: 20px;
+                z-index: 1001;
+            }
+            .com-header__menu_button button {
+                background: none;
+                border: none;
+                padding: 0;
+                width: 32px;
+                height: 32px;
+            }
+            .com-header__menu_button img {
+                width: 100%;
+                height: auto;
+            }
+            /* 오른쪽에서 슬라이드되는 메뉴 */
+            .com-header__menu-items {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 300px;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.8);
+                z-index: 1000;
+                box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+                transition: right 0.3s ease-in-out;
+                padding: 2rem 1.5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                padding-top: 120px;
+            }
+            .com-header__menu-items.active {
+                right: 0;
+            }
+            .com-header__menu-items__item p {
+                margin: 0;
+                font-size: 1.1rem;
+            }
+            .com-header__menu-items__item-sub {
+                margin-top: 0.5rem;
+                padding-left: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('menuToggle');
+            const menu = document.getElementById('mobileMenu');
+
+            menuBtn.addEventListener('click', function() {
+                menu.classList.toggle('active');
+            });
+
+            // 메뉴 바깥 클릭 시 닫기 (선택사항)
+            document.addEventListener('click', function(e) {
+                if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+                    menu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cards = document.querySelectorAll('.vision-grid .card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('visible');
+                }, index * 200); // 0.2초 간격으로 하나씩 등장
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const openBtn = document.querySelector(".com-header__menu-util__create");
+            const modal = document.getElementById("contactModal");
+            const closeBtn = document.getElementById("closeModalBtn");
+            const form = document.getElementById("contactForm");
+
+            openBtn.addEventListener("click", () => {
+                modal.classList.add("show");
+                document.body.style.overflow = "hidden";
+            });
+
+            closeBtn.addEventListener("click", closeModal);
+            modal.addEventListener("click", (e) => {
+                if (e.target === modal) closeModal();
+            });
+
+            function closeModal() {
+                modal.classList.remove("show");
+                document.body.style.overflow = "";
+            }
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                alert("문의가 성공적으로 접수되었습니다!");
+                form.reset();
+                closeModal();
+            });
+        });
+    </script>
+
+</head>
+
+<body style="overflow: unset;">
+
+
+    <div id="__next" data-reactroot="" style="height: 100vh;">
+
+        <div id="app">
+            <header class="com-header">
+                <div class="inner" style="opacity: 1; transform: none;">
+                    <div class="com-header__logo"><a href="/index.html"><svg width="31" height="44" viewBox="0 0 31 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.5914 12.0555V0H0V30.1183H13.4086L13.4042 44H15.5C24.0468 44 31 36.8015 31 27.9532C31 19.9071 25.2563 13.129 17.5914 12.0555ZM13.4108 25.788H4.37493C5.01458 21.6271 8.32634 17.4639 13.4086 16.4378V25.788H13.4108ZM13.4108 12.0555C9.9069 12.555 6.04282 14.4557 3.86408 17.7216V3.87384H13.4086V12.0555H13.4108ZM17.5914 39.4707V16.4356C22.8811 17.4639 26.8194 22.3413 26.8194 27.9532C26.8194 33.565 22.8811 38.4424 17.5914 39.4707Z" fill="black"></path></svg></a></div>
+                    <div class="com-header__menu">
+                        <div class="com-header__menu-items">
+                            <div class="com-header__menu-items__item has-sub">
+                                <p><a href="./brand.html">AI HIM</a></p>
+                            </div>
+                            <div class="com-header__menu-items__item has-sub">
+                                <p><a href="javascript:void(0)">About</a></p>
+                                <div id="subAbout" class="com-header__menu-items__item-sub en"><a href="./ceo.html">CEO</a><a href="/vision.html">VISION</a></div>
+                            </div>
+                            <div class="com-header__menu-items__item has-sub">
+                                <p><a href="javascript:void(0)">Services</a></p>
+                                <div id="subServices" class="com-header__menu-items__item-sub en"><a href="./flow.html">Flow</a><a href="./portfolio.html">Projects</a></div>
+                            </div>
+                            <div class="com-header__menu-items__item has-sub">
+                                <p><a href="./portfolio.html">Portfolio</a></p>
+                            </div>
+                            <div class="com-header__menu-items__item has-sub">
+                                <p><a href="./notice.html">Notice & News</a></p>
+                            </div>
+                            <div class="com-header__menu-items__item has-sub">
+                                <p><a href="./help.html" target="_blank">Help</a></p>
+
+                            </div>
+                        </div>
+                        <div class="com-header__menu-util">
+                            <button class="com-header__menu-util__create btn-round size--small en">Get In Touch</button>
+                        </div>
+                    </div>
+                    <div class="com-header__menu_button">
+                        <button id="menuToggle" aria-label="Open menu">
+                    <img src="./menu-icon.svg" alt="Menu" />
+                </button>
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="com-header__menu-items" id="mobileMenu">
+                <p><a href="./brand.html">AI HIM</a></p>
+                <p><a href="./ceo.html">CEO</a></p>
+                <p><a href="/vision.html">VISION</a></p>
+                <p><a href="./flow.html">Flow</a></p>
+                <p><a href="./portfolio.html">Portfolio</a></p>
+                <p><a href="./notice.html">Notice & News</a></p>
+                <p><a href="./help.html" target="_blank">Help</a></p>
+            </div>
+
+
+            <div class="wrapper">
+                <div class="header">
+                    <h1>초록빛 봄맞이 이벤트 안내</h1>
+                    <div class="meta">작성자: 관리자 | 작성일: 2025-06-20</div>
+                </div>
+
+                <div class="highlight-box">
+                    🎉 전 회원 대상 봄맞이 특별 이벤트를 진행합니다. 기간 내 모든 상품에 쿠폰 적용 가능!
+                </div>
+
+                <div class="content">
+                    안녕하세요, 리엔플렉스입니다. 따뜻한 봄을 맞이하여 고객 여러분께 감사의 마음을 담아 이벤트를 준비했습니다. 📌 이벤트 기간: 2025년 6월 25일 ~ 2025년 7월 5일 📌 혜택: 20% 할인 쿠폰 전원 지급 📌 사용처: 전 상품 (일부 제외 상품 있음) 참여 방법은 별도 회원가입 없이 로그인 후 쿠폰함을 확인하시면 됩니다. 앞으로도 더 좋은 혜택과 서비스를 제공해 드리겠습니다. 감사합니다.
+                </div>
+
+                <a href="notice.html" class="back-link">← 공지사항 목록으로 돌아가기</a>
+                <div class="watermark">LEE N FLEX © 2025</div>
+            </div>
+            <!-- 문의 모달 오버레이 -->
+            <div id="contactModal" class="modal">
+                <div class="modal-content">
+                    <button class="modal-close" id="closeModalBtn">&times;</button>
+                    <h2>문의하기</h2>
+                    <form action="https://formspree.io/f/xkgbqnjg" method="POST">
+                        <label for="name">이름(업체명)</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="tel">연락처</label>
+                        <input type="tel" id="tel" name="tel" required>
+                        <label for="budget">예산</label>
+                        <select id="budget" name="budget">
+                            <option value="1,000 만원 미만">1,000 만원 미만</option>
+                              <option value="1,000 만원 ~ 3,000 만원">1,000 만원 ~ 3,000 만원</option>
+                                <option value="3,000 만원 ~ 5,000 만원">3,000 만원 ~ 5,000 만원</option>
+                                  <option value="5,000 만원 ~ 7,000 만원">5,000 만원 ~ 7,000 만원</option>
+                                    <option value="7,000 만원 ~ 1억">7,000 만원 ~ 1억</option>
+                                     <option value="1 억원 ~ 3 억원">1 억원 ~ 3 억원</option>
+                                       <option value="3 억원 이상">3 억원 이상</option>
+                        </select>
+                        <label for="message">문의 내용</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
